@@ -178,4 +178,14 @@
       first_char = #{firstChar,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
+  <select id="selectByName" parameterType="java.lang.String" resultType="com.pinyougou.pojo.TbBrand">
+    SELECT
+      `id`,
+      `name`,
+      `first_char`
+	FROM
+	  `tb_brand`
+	WHERE
+	  name = #{name}
+  </select>
 </mapper>

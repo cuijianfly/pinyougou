@@ -28,4 +28,6 @@ public interface TbBrandMapper {
     int updateByPrimaryKeySelective(TbBrand record);
 
     int updateByPrimaryKey(TbBrand record);
+    // 自定义查询方法
+    List<TbBrand> selectByName(String name);
 }
