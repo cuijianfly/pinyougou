@@ -5,6 +5,7 @@ import com.pinyougou.entity.Result;
 import com.pinyougou.pojo.TbBrand;
 
 import java.util.List;
+import java.util.Map;
 
 public interface BrandService {
     // 查询所有
@@ -27,4 +28,7 @@ public interface BrandService {
 
     // 条件分页查询
     public PageResult findPage(TbBrand tbBrand,int pageNum,int pageSize);
+
+    // 查找商品项
+    public List<Map> selectOptionList();
 }

@@ -4,6 +4,13 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class TbSeller implements Serializable {
+
+    // 状态常量
+    public static final String SELLER_STATUS_UNCHECK = "0";
+//    public static final String SELLER_STATUS_ALREADCHECK = "1";
+//    public static final String SELLER_STATUS_CHECKSUCCESS = "2";
+//    public static final String SELLER_STATUS_CHECKFAIL = "3";
+
     private String sellerId;
 
     private String name;

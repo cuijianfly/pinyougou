@@ -5,6 +5,7 @@ import com.pinyougou.pojo.TbBrandExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Map;
 
 public interface TbBrandMapper {
     int countByExample(TbBrandExample example);
@@ -28,6 +29,10 @@ public interface TbBrandMapper {
     int updateByPrimaryKeySelective(TbBrand record);
 
     int updateByPrimaryKey(TbBrand record);
+
     // 自定义查询方法
     List<TbBrand> selectByName(String name);
+
+    // 查找商品选项
+    List<Map> selectOptionList();
 }

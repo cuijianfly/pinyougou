@@ -9,23 +9,23 @@ public class Result implements Serializable {
     /**
      * 是否成功
      */
-    private Boolean flag;
+    private Boolean success;
     /**
      * 辅助信息
      */
     private String message;
 
-    public Result(Boolean flag, String message) {
-        this.flag = flag;
+    public Result(Boolean success, String message) {
+        this.success = success;
         this.message = message;
     }
 
-    public Boolean getFlag() {
-        return flag;
+    public Boolean getSuccess() {
+        return success;
     }
 
-    public void setFlag(Boolean flag) {
-        this.flag = flag;
+    public void setSuccess(Boolean success) {
+        this.success = success;
     }
 
     public String getMessage() {
